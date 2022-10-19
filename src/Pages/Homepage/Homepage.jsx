@@ -1,11 +1,13 @@
 import React from 'react'
 import Gallery from '../../Components/Gallery/Gallery'
-import './homepage.css'
+import './homepage.scss'
 
 function Homepage() {
   return (
     <div className='home'>
-      <Gallery/>
+      <Gallery />
+      
+      
     </div>
   )
 }

@@ -8,6 +8,7 @@ import Seth from '../../Assets/seth.jpg'
 import Braun from '../../Assets/braun.jpg'
 import Roman from '../../Assets/roman.jpg'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 function Gallery() {
 
@@ -64,6 +65,7 @@ function Gallery() {
         gap: 20px;
         flex-wrap: wrap;
         overflow: hidden;
+        margin-bottom: 30px;
     `
 
     // const name = 'sasha banks'
@@ -74,7 +76,11 @@ function Gallery() {
                 wrestlers.map((wrestler, i) => (
                     <Card key={i} img={wrestler.img} name={wrestler.name} age={wrestler.age}/>
                 ))
-           } 
+            } 
+            
+            <button className="btn">
+                <Link to='/about'>Hooks</Link>
+            </button>
       </Div>
   )
 }
